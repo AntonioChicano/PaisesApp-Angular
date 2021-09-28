@@ -9,12 +9,12 @@ import { Country } from '../interfaces/pais.interface';
 })
 export class PaisService {
 
-  //https://restcountries.eu/rest/v2
+  //    https://restcountries.eu/rest/v2
   private apiUrl: string = 'https://restcountries.com/v2';
 
   get httpParams() {
     //name;capital;alpha2Code;flag;population
-    return new HttpParams().set('fields', 'name,capital,alpha2Code,flags,population')
+    return new HttpParams().set('fields', 'name,capital,alpha2Code,flag,population')
   }
 
   constructor(private http: HttpClient) { }

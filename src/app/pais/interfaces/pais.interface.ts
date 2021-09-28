@@ -84,7 +84,7 @@ export interface Country {
     currencies: Currency[];
     languages: Language[];
     translations: Translations;
-    flags: string[];
+    flag: string[];
     regionalBlocs: RegionalBloc[];
     cioc: string;
     independent: boolean;
