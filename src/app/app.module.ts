@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
+import { APP_BASE_HREF } from '@angular/common';
 
 import { AppComponent } from './app.component';
 import { PaisModule } from './pais/pais.module';
@@ -11,6 +12,7 @@ import { AppRoutingModule } from './app-routing.module';
   declarations: [
     AppComponent
   ],
+  providers: [{ provide: APP_BASE_HREF, useValue: 'PaisesApp-Angular' }],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -18,7 +20,7 @@ import { AppRoutingModule } from './app-routing.module';
     PaisModule,
     SharedModule
   ],
-  providers: [],
+  // providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
