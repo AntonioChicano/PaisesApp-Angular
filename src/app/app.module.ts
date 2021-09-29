@@ -12,7 +12,7 @@ import { AppRoutingModule } from './app-routing.module';
   declarations: [
     AppComponent
   ],
-  providers: [{ provide: APP_BASE_HREF, useValue: '/' }],
+  providers: [{ provide: APP_BASE_HREF, useValue: '/PaisesApp-Angular/' }],
   imports: [
     BrowserModule,
     AppRoutingModule,
